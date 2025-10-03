@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>A Lenda do Cristal Estelar</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="Desenho de um mapa misterioso">
+            <p>Em uma noite fria, você recebe um pacote anônimo. Dentro, um mapa antigo e uma nota: "O **Cristal Estelar** aguarda, onde o gelo encontra o fogo. Escolha seu ponto de partida para a primeira chave."</p>
+            <button class="btn-proximo" data-proximo="1">Iniciar na Sibéria (Gelo)</button>
+            <button class="btn-proximo" data-proximo="2">Iniciar no Havaí (Fogo)</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Você começa sua busca nos vastos desertos gelados da Sibéria. A primeira pista fala de um "guardião silencioso" na montanha mais alta. Você precisa decidir como prosseguir.</p>
+            <button class="btn-proximo" data-proximo="3">Subir a montanha de imediato</button>
+            <button class="btn-proximo" data-proximo="4">Buscar um guia local na aldeia</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>No Havaí, você está na Grande Ilha, a pista é sobre "o alento do dragão". Para encontrar o próximo passo, você deve investigar os vulcões adormecidos ou o litoral. Por onde começar?</p>
+            <button class="btn-proximo" data-proximo="5">Explorar o cume do vulcão Kilauea</button>
+            <button class="btn-proximo" data-proximo="6">Investigar as praias de areia preta</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>No topo da montanha siberiana, exausto, você encontra uma caverna. Dentro, um enigma gravado em gelo: a próxima chave está na "Ilha que Sangra".</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para a Ilha</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4-voltar-casa.png" alt="imagem voltando para casa e desitindo da aventura">
+            <p>O guia local adverte que a montanha está inacessível. Você decide que é perigoso demais e volta, o Cristal Estelar se torna apenas uma lenda distante.</p>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>No cume do Kilauea, você encontra um pergaminho resistente ao calor dentro de uma fenda de lava resfriada. A próxima chave está na "Ilha que Sangra".</p>
+            <button class="btn-proximo" data-proximo="7">Viajar para a Ilha</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>A areia preta é fascinante, mas após dias de busca, você só encontra conchas e água salgada. Nenhuma pista.</p>
+            <button class="btn-proximo" data-proximo="8">Voltar e explorar o vulcão</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>Você chega à misteriosa "Ilha que Sangra" (referência a um local com rochas vermelhas). A busca pela chave final se concentra em uma floresta densa. Você se depara com duas trilhas.</p>
+            <button class="btn-proximo" data-proximo="9">Pegar a trilha mais larga</button>
+            <button class="btn-proximo" data-proximo="10">Pegar a trilha estreita e coberta</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>De volta ao vulcão, você encontra o pergaminho. O calor da busca o leva a viajar para a misteriosa "Ilha que Sangra".</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para a Ilha</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>A trilha mais larga leva a um acampamento de aventureiros sem sucesso. Eles dizem que a trilha verdadeira é a outra.</p>
+            <button class="btn-proximo" data-proximo="12">Voltar e tentar a trilha estreita</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>A trilha estreita leva a uma gruta escondida! Dentro, o **Cristal Estelar** brilha com uma luz azul intensa, cercado por escrituras antigas.</p>
+            <button class="btn-proximo" data-proximo="11">Tocar o Cristal Estelar</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="img/cenario-passo11-cidade-perdida.png" alt="O Cristal Estelar brilhando intensamente">
+            <p>Ao tocar o cristal, você sente uma onda de energia e sabedoria. Você se torna o novo guardião da lenda, com o poder de guiar a luz para o mundo.</p>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <p>Retornando e escolhendo a trilha estreita, você finalmente encontra a gruta e a luz que emana de seu interior.</p>
+            <button class="btn-proximo" data-proximo="11">Tocar o Cristal Estelar</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
